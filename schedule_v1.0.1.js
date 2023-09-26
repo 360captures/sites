@@ -147,7 +147,7 @@ $(document).ready(function () {
             $(".t1--time-type__wrapper").children().eq(0).addClass("is--active"))
           : ($(".t1--time-type").removeClass("is--active"),
             $(".t1--time-type__wrapper").children().eq(1).addClass("is--active")),
-        8 === $(".swiper-slide.is--disabled").length &&
+        8 <= $(".swiper-slide.is--disabled").length &&
           ($(".t1--schedule-slider-time").addClass("is--disabled"),
           $(".t1--no-time").removeClass("is--disabled"));
     }
