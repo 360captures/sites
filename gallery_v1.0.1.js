@@ -41,11 +41,18 @@ $(document).ready(function(){
         initThumbs();
     }
 
+    if ($(window).width() > 991) {
+        initGallery();
+    }
+
     function countSlides() {
         let totalSlides = $('.t1--slider__content').find('.swiper-slide.t1--gallery__image').length;
         $('.t1--open-lightbox').text("View All " + totalSlides + " Photos");
     }
 
+    if ($(window).width() <= 991) {
+        countSlides();
+    }
 
     function destroySwiper() {
         if (bgSwiper) {
@@ -63,10 +70,8 @@ $(document).ready(function(){
         if (currentIsScreenSmall) {
             destroySwiper();
             countSlides();
-            console.log("1");
         } else {
             initGallery();
-            console.log("2");
         }
 
         // Обновляем состояние экрана
