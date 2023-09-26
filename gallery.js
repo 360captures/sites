@@ -70,8 +70,10 @@ $(document).ready(function(){
         if (currentIsScreenSmall) {
             destroySwiper();
             countSlides();
+            console.log("Меньше или равно 991");
         } else {
             initGallery();
+            console.log("Больше или равно 991");
         }
 
         // Обновляем состояние экрана
