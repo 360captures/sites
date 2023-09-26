@@ -1,5 +1,8 @@
+var timer;
+
+function executeCommand() {
   // Gallery Slider //
-  let bgSwiper;
+  var bgSwiper;
 
   // Функция для создания Swiper
   function initSwiper() {
@@ -65,3 +68,13 @@
       },
     });
   });
+}
+
+function handleMutations() {
+  clearTimeout(timer);
+
+  timer = setTimeout(executeCommand, 500);
+}
+
+$('#cms-list').on('MutationObserver', handleMutations);
+$('#cms-list2').on('MutationObserver', handleMutations);
