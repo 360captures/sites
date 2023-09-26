@@ -63,8 +63,10 @@ $(document).ready(function(){
         if (currentIsScreenSmall) {
             destroySwiper();
             countSlides();
+            console.log("1");
         } else {
             initGallery();
+            console.log("2");
         }
 
         // Обновляем состояние экрана
