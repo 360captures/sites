@@ -77,4 +77,3 @@ function handleMutations() {
 }
 
 $('#cms-list').on('MutationObserver', handleMutations);
-$('#cms-list2').on('MutationObserver', handleMutations);
