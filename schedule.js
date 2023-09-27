@@ -1,3 +1,4 @@
+// Update
 $(document).ready(function () {
   // Очищаем содержимое элемента с классом "t1--schedule-days"
   var $scheduleDays = $(".t1--schedule-days").empty();
