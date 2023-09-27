@@ -15,7 +15,7 @@ $(document).ready(function () {
         "September", "October", "November", "December"
       ][date.getMonth()];
       
-      var $slide = $('<div class="swiper-slide"><div class="t1--day-of-week">' +
+      var $slide = $('<div class="swiper-slide t1--schedule-days-slide"><div class="t1--day-of-week">' +
         '<div class="t1--weekday-num">' + date.getDate() + '</div>' +
         '<div class="t1--weekday">' + dayOfWeek + '</div>' +
         '<div class="t1--schedule-months">' + monthName + '</div>' +
