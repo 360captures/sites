@@ -1,4 +1,4 @@
-// Changes 
+// Changes 1
 var bgSwiper;
 var thumbsSwiper;
 
