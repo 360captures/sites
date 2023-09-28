@@ -98,7 +98,7 @@ new Swiper(".t1--container-schedule-slider", {
   breakpoints: {
     // when window width is >= 320px
     992: {
-      spaceBetween: rem * 0.26,
+      spaceBetween: rem * 0.27,
     },
     // when window width is >= 480px
     240: {
@@ -248,7 +248,7 @@ var timeSwiper = new Swiper(".t1--container-schedule-slider-time", {
   breakpoints: {
     // when window width is >= 320px
     992: {
-      spaceBetween: rem * 0.26,
+      spaceBetween: rem * 0.27,
     },
     // when window width is >= 480px
     240: {
