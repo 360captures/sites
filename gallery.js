@@ -12,6 +12,12 @@ function initSwiper() {
         allowTouchMove: false,
         mousewheel: {
             forceToAxis: true,
+        },
+        on: {
+          slideChange: function () {
+            // При изменении слайда в swiper1, перейти к соответствующему слайду в swiper2
+            thumbsSwiper.slideTo(this.activeIndex);
+          },
         }
       });
     });
