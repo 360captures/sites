@@ -7,12 +7,17 @@ function initSwiper() {
       bgSwiper = new Swiper($(this).find('.swiper.t1--gallery__slider')[0], {
         slidesPerView: "auto",
         speed: 300,
+        slideToClickedSlide: true,
         effect: "fade",
         crossFade: true,
         allowTouchMove: false,
         mousewheel: {
             forceToAxis: true,
         },
+        navigation: {
+          nextEl: '.t1--gallery__img-next',
+          prevEl: '.t1--gallery__img-prev',
+          },
         on: {
           slideChange: function () {
             // При изменении слайда в swiper1, перейти к соответствующему слайду в swiper2
