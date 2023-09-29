@@ -1,4 +1,4 @@
-// 29.09.2023 13:56 //
+// 29.09.2023 14:06 //
 $(document).ready(function () {
   var $daysContainer = $(".t1--schedule-days").empty();
   var currentDate = new Date();
@@ -99,7 +99,7 @@ new Swiper(".t1--container-schedule-slider", {
   breakpoints: {
     // when window width is >= 320px
     992: {
-      spaceBetween: 0.27 * rem,
+      spaceBetween: 0.26 * rem,
     },
     // when window width is >= 480px
     240: {
@@ -211,6 +211,7 @@ function checkTime() {
           timeSwiper.update();
         });
       }
+      timeSwiper.update();
     } else {
       $(".t1--schedule-slider-time").removeClass("is--disabled");
       $(".t1--no-time").addClass("is--disabled");
@@ -246,7 +247,7 @@ var timeSwiper = new Swiper(".t1--container-schedule-slider-time", {
   breakpoints: {
     // when window width is >= 320px
     992: {
-      spaceBetween: 0.27 * rem,
+      spaceBetween: 0.26 * rem,
     },
     // when window width is >= 480px
     240: {
