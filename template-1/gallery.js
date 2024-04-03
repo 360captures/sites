@@ -10,6 +10,7 @@ function initSwiper() {
         slideToClickedSlide: true,
         effect: "fade",
         crossFade: true,
+        cssMode: true,
         allowTouchMove: false,
         mousewheel: {
             forceToAxis: true,
