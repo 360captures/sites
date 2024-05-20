@@ -1,5 +1,5 @@
-var bgSwiper;
-var thumbsSwiper;
+let bgSwiper;
+let thumbsSwiper;
 
 // Функция для создания Swiper
 function initSwiper() {
@@ -60,9 +60,7 @@ function initGalleries() {
       initThumbs();
     }
 
-    if ($(window).width() > 991) {
-      initGallery();
-    }
+    initGallery();
 
     function countSlides() {
       let totalSlides = $('.t1--slider__content').find(
@@ -71,15 +69,7 @@ function initGalleries() {
       $('.t1--open-lightbox').text('View All ' + totalSlides + ' Photos');
     }
 
-    if ($(window).width() <= 991) {
-      countSlides();
-    }
-
-    function destroySwiper() {
-      if (bgSwiper) {
-        bgSwiper.destroy();
-      }
-    }
+    countSlides();
 
     let isScreenSmall = $(window).width() <= 991;
 
@@ -109,6 +99,12 @@ function initGalleries() {
       });
     });
   });
+}
+
+function destroySwiper() {
+  if (bgSwiper) {
+    bgSwiper.destroy();
+  }
 }
 
 var cmsList = document.getElementById('cms-list');
